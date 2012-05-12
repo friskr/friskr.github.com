@@ -1,8 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 body {
 background: #222 url(pattern.png) fixed;
-font-family: "Roboto", Helvetica, Arial, sans-serif;
+font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 font-size: 14px;
 line-height: 20px;
 color: #fff;
@@ -46,7 +47,8 @@ position: relative;
 }
 
 h1 {
-font-weight: 200;
+font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 100;
 font-size: 48px;
 line-height: 72px;
 margin-bottom: 36px;
@@ -61,6 +63,7 @@ a {
 color: #fff;
 text-decoration: none;
 border-bottom: rgba(255,255,255,0.4) 2px solid;
+-webkit-transition: all ease-in-out;
 }
 
 a:hover {
@@ -88,7 +91,7 @@ margin-right: 10px;
 }
 
 .social a:hover {
-opacity: 0.8;
+opacity: 0.8 !important;
 }
 
 @media (max-width: 500px) {
