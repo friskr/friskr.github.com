@@ -4,8 +4,8 @@
 body {
 background: #222 url(pattern.png) fixed;
 font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-font-size: 14px;
-line-height: 20px;
+font-size: 16px;
+line-height: 24px;
 color: #fff;
 margin: 0;
 padding: 0;
@@ -53,9 +53,9 @@ border-radius: 10px;
 h1 {
 font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight: 100;
-font-size: 48px;
-line-height: 72px;
-margin-bottom: 36px;
+font-size: 64px;
+line-height: 64px;
+margin-bottom: 48px;
 text-shadow: 0 3px 3px rgba(0,0,0,.4);
 }
 
@@ -120,6 +120,10 @@ margin: 0;
 -webkit-border-radius: 0;
 -moz-border-radius: 0;
 border-radius: 0;
+}
+
+br {
+display: none;
 }
 
 .center {
