@@ -1,23 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis:700,400,200);
-
 @import url(http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic);
 
-html {
-height: 100%;
-}
-
 body {
-background: #000 url(blur.jpg) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+background: #222 url(pattern.png) fixed;
+font-family: "Roboto", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 20px;
 color: #fff;
-height: 100%;
 margin: 0;
 padding: 0;
-font-family: "Dosis", Helvetica, Arial, sans-serif;
-font-size: 16px;
+text-shadow: 0 2px 2px rgba(0,0,0,.4);
 }
 
 * {
@@ -25,142 +16,111 @@ margin: 0;
 padding: 0;
 }
 
-#wrap {
+#head {
+padding: 20px 0;
+}
+
+#intro {
+background: url(photo.jpg) no-repeat;
+width: 500px;
+height: 375px;
 position: absolute;
-width: 320px;
 top: 50%;
 left: 50%;
-margin-top: -120px;
-margin-left: -160px;
--webkit-animation: pop 1s ease;
--moz-animation: pop 1s ease;
+margin-top: -188px;
+margin-left: -250px;
+-webkit-box-shadow: 0 0 20px 5px #000;
+-moz-box-shadow: 0 0 20px 0 #000;
+box-shadow: 0 0 25px 0 #000;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.center {
+background-color: rgba(0,0,0,0.33);
+width: 440px;
+height: 315px;
+padding: 30px;
+position: relative;
 }
 
 h1 {
-font-size: 72px;
 font-weight: 200;
-margin-bottom: 18px;
-text-shadow: 0 2px 2px rgba(0,0,0,.4);
+font-size: 48px;
+line-height: 72px;
+margin-bottom: 36px;
+text-shadow: 0 3px 3px rgba(0,0,0,.4);
 }
 
 p {
-margin-bottom: 8px;
-font-family: "Roboto", Helvetica, Arial, sans-serif;
+margin-bottom: 10px;
 }
 
 a {
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
 color: #fff;
 text-decoration: none;
+border-bottom: rgba(255,255,255,0.4) 2px solid;
+}
+
+a:hover {
+color: #bbb;
 }
 
 .social {
-padding-top: 10px;
-font-family: "Dosis", Helvetica, Arial, sans-serif;
+position: absolute;
+left: 30px;
+bottom: 30px;
 }
 
 .social a {
 display: block;
-background-color: rgba(75,214,255,.8);
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
 width: 20px;
 height: 20px;
-line-height: 20px;
-text-align: center;
-box-shadow: 0 0 2px rgba(0,0,0,.4);
+float: left;
+box-shadow: 0 0 4px rgba(0,0,0,.4);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; 
+opacity: 0.5;
+border: 0 none;
+margin-right: 10px;
 }
 
 .social a:hover {
-background-color: rgba(75,214,255,1);
+opacity: 0.8;
 }
 
-.a0 {
--webkit-animation: ghost 1s ease;
--webkit-animation-fill-mode: both;
--moz-animation: ghost 1s ease;
--moz-animation-fill-mode: both;
-animation: ghost 1s ease;
-animation-fill-mode: both;
+@media (max-width: 500px) {
+
+html {
+-webkit-text-size-adjust:none
+}
+
+#intro {
+background-size: cover;
+width: auto;
+height: auto;
 position: relative;
-text-shadow: 0 2px 2px rgba(0,0,0,.4);
+top: auto;
+left: auto;
+margin: 0;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
 }
 
-.a1 {
--webkit-animation: ghost 1s 1s ease;
--webkit-animation-fill-mode: both;
--moz-animation: ghost 1s 1s ease;
--moz-animation-fill-mode: both;
-animation: ghost 1s 1s ease;
-animation-fill-mode: both;
+.center {
+width: auto;
+height: auto;
+}
+
+.social {
 position: relative;
-text-shadow: 0 2px 2px rgba(0,0,0,.4);
+left: auto;
+bottom: auto; 
+padding-top: 24px;
+margin-bottom: 24px;
 }
 
-.a2 {
--webkit-animation: ghost 1s 2s ease;
--webkit-animation-fill-mode: both;
--moz-animation: ghost 1s 2s ease;
--moz-animation-fill-mode: both;
-animation: ghost 1s 2s ease;
-animation-fill-mode: both;
-position: relative;
-text-shadow: 0 2px 2px rgba(0,0,0,.4);
-}
-
-.a3 {
--webkit-animation: ghost 1s 3s ease;
--webkit-animation-fill-mode: both;
--moz-animation: ghost 1s 3s ease;
--moz-animation-fill-mode: both;
-animation: ghost 1s 3s ease;
-animation-fill-mode: both;
-position: relative;
-}
-
-@media (max-width: 360px) {
-
-#wrap {
-width: 280px;
-margin-top: -140px;
-margin-left: -140px;
-}
-
-}
-
-@-webkit-keyframes ghost {
-	0% {
-		top: 20px;
-		opacity: 0;
-	}	
-	100% {
-		top: 0;
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes ghost {
-	0% {
-		top: 20px;
-		opacity: 0;
-	}	
-	100% {
-		top: 0;
-		opacity: 1;
-	}
-}
-
-@keyframes ghost {
-	0% {
-		top: 20px;
-		opacity: 0;
-	}	
-	100% {
-		top: 0;
-		opacity: 1;
-	}
 }
