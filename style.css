@@ -76,6 +76,10 @@ a:hover {
 color: #bbb;
 }
 
+a img {
+border: 0 none;
+}
+
 .social {
 position: absolute;
 left: 50px;
