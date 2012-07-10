@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Q
+title: Nexu Q
 ---
 
-some text
+!images/2012-07-08-q.jpg(Nexus Q)!
