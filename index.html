@@ -9,17 +9,10 @@
 
 <body>
 
-<div id="intro">
-<div class="center">
-	<h1>Friskr</h1>
-	<p>Black and white photography like you never seen before.</p>
-	<p>Building the web application is taking more than I anticipated,<br /> so you can enjoy <a href="http://blog.friskr.com/">the blog</a> in the meantime.</p>
-	<div class="social">
-	<a href="http://blog.friskr.com/rss/"><img src="white-feed.png" width="24" height="24" alt="feed" /></a>
-	<a href="http://twitter.com/friskr/"><img src="white-twitter.png" width="24" height="24" alt="twitter" /></a>
-	</div>
-</div>
-</div>
+{% for post in site.posts %}
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<p>{{ post.sumar }}</p>
+{% endfor %}
 
 </body>
 </html>
