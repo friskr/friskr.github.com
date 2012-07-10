@@ -80,6 +80,11 @@ a img {
 border: 0 none;
 }
 
+#content img {
+width: 640px;
+height: auto;
+}
+
 .social {
 position: absolute;
 left: 50px;
