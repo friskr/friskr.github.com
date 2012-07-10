@@ -1,18 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Friskr</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body>
+---
+layout: default
+title: Friskr
+---
 
 {% for post in site.posts %}
 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 <p>{{ post.sumar }}</p>
 {% endfor %}
-
-</body>
-</html>
